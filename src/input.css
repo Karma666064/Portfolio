@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar { width: 9px; }
+
+::-webkit-scrollbar-thumb {
+    background-color: oklch(var(--n));
+    border-radius: 9px;
+}
+
+p, span, li,
+h1, h2, h3, h4,
+h5, h6 { cursor: default; }
+
+.active-btn { border: 1px solid oklch(var(--p)); }
+
+#cards-about > div:hover {
+    > svg { fill: oklch(var(--p)); }
+    > p { color: oklch(var(--p)); }
+}

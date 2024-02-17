@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="output.css">
+
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css'>
+
+        <script src="scroll.js" defer></script>
+
+        <title>Karma66 - Portfolio</title>
+    </head>
+
+    <body>
+        <nav class="fixed top-0 left-0 bottom-0 w-64 bg-base-300 flex flex-col items-center justify-between py-4">
+            <div class="avatar">
+                <div class="w-20 rounded-full">
+                    <img src="ressources/profile.png" />
+                </div>
+            </div>
+
+            <ul class="flex flex-col w-full text-base">
+                <li><a id="btnAbout" class="btn btn-block rounded-none hover:bg-primary/90 active-btn" href="#">About</a></li>
+                <li><a id="btnWork" class="btn btn-block rounded-none hover:bg-primary/90" href="#sectionWork">Works</a></li>
+                <li><a id="btnCreation" class="btn btn-block rounded-none hover:bg-primary/90" href="#sectionCreation">Creations</a></li>
+                <li><a id="btnMiniCreation" class="btn btn-block rounded-none hover:bg-primary/90" href="#sectionMiniCreation">Mini Creations</a></li>
+            </ul>
+
+            <section class="text-xs text-center w-full">
+                <p class="dev">Developed by <span class="text-sm text-secondary">Karma66</span> with passion</p>
+                
+                <p class="copyright">&copy; Copyright <a href="https://omegakorps.com" target="_blank" class="link-secondary link-hover">Omega Korps</a> - All right reserved</p>
+
+                <p class="date">2023 - V1.1</p>
+            </section>
+        </nav>
+
+        <main class="ml-64">
+            <!-- <header class="bg-base-300 w-full h-6"></header> -->
+
+            <main class="ml-5 pr-5">
+                <!-- About section -->
+                <section id="sectionAbout" class="mt-10 min-h-[80vh]">
+                    <h1 class="text-3xl font-semibold mb-1">Hellow! I'm Sunny Raloa <span class="text-secondary">Aka Karma66!</span></h1>
+                    <h2 class="text-2xl font-semibold ml-3">I'm a French web developer Full-stack</h2>
+
+                    <p class="my-14 ml-20 w-[501px] text-lg">Born on Reunion Island, I am 21 years old.<br>Practicing programming for nearly 3 years has included 2 years of self-teaching and attending web developement training on Reunion island.</p>
+
+                    <div id="cards-about" class="*:bg-red-500 w-fit mx-auto my-0 grid grid-cols-5 gap-3 justify-items-center">
+                        <div class="bg-base-300 flex justify-center items-center flex-col gap-3 w-48 h-48 rounded transition-all duration-250 hover:scale-105 hover:shadow-perso hover:shadow-red-600">
+                            <svg fill="#CDCDCD" width="52" height="52" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32.4991 47.3002C31.9991 47.3002 31.5991 47.2002 31.1991 47.0002L23.1991 43.8002C21.9991 43.3002 21.1991 42.3002 20.9991 41.1002L20.0991 36.1002C19.8991 34.9002 20.6991 33.7002 21.8991 33.5002C23.0991 33.3002 24.2991 34.1002 24.4991 35.3002L25.2991 39.8002L32.4991 42.7002L39.6991 39.7002L41.4991 30.8002H22.6991C20.9991 30.8002 19.4991 29.6002 19.1991 27.8002L17.7991 19.8002C17.5991 18.7002 17.8991 17.5002 18.5991 16.6002L18.6991 16.5002C19.4991 15.7002 20.4991 15.2002 21.6991 15.2002H44.8991C46.0991 15.2002 47.1991 16.2002 47.1991 17.5002C47.1991 18.8002 46.1991 19.8002 44.8991 19.8002H22.2991L23.4991 26.4002H42.6991C43.7991 26.4002 44.7991 26.9002 45.4991 27.7002C46.1991 28.5002 46.4991 29.6002 46.1991 30.7002L44.0991 41.0002C43.8991 42.2002 43.0991 43.2002 41.9991 43.6002L33.9991 46.9002C33.4991 47.2002 32.9991 47.3002 32.4991 47.3002Z"/><path d="M32 62.1998C31.4 62.1998 30.8 62.0998 30.2 61.9998L14.4 58.2998C11.3 57.5998 8.90002 54.8998 8.50002 51.6998L3.60002 10.3998C3.40002 8.1998 4.10002 5.9998 5.50002 4.2998C7.00002 2.6998 9.10002 1.7998 11.3 1.7998H52.7C54.9 1.7998 57 2.6998 58.5 4.3998C60 5.9998 60.7 8.2998 60.4 10.3998L55.5 51.6998C55.1 54.8998 52.7 57.5998 49.6 58.2998L33.8 61.9998C33.2 62.1998 32.6 62.1998 32 62.1998ZM11.3 6.2998C10.4 6.2998 9.50002 6.69981 8.90002 7.39981C8.30002 7.99981 8.00002 8.8998 8.10002 9.8998L13 51.1998C13.2 52.4998 14.1 53.5998 15.5 53.9998L31.3 57.6998C31.8 57.7998 32.3 57.7998 32.8 57.6998L48.5 53.9998C49.8 53.6998 50.8 52.5998 51 51.1998L55.9 9.8998C56 8.8998 55.7 7.9998 55.1 7.2998C54.5 6.5998 53.6 6.1998 52.7 6.1998H11.3V6.2998Z"/>
+                            </svg>
+                            <p class="text-lg font-semibold">HTML</p>
+                        </div>
+                        <div class="bg-base-300 flex justify-center items-center flex-col gap-3 w-48 h-48 rounded transition-all duration-250 hover:scale-105 hover:shadow-perso hover:shadow-red-600">
+                            <svg fill="#CDCDCD" width="52" height="52" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M48.4984 15.8C47.6984 14.9 46.5984 14.5 45.3984 14.5H16.6984C15.4984 14.5 14.3984 15.5 14.3984 16.8C14.3984 18.1 15.3984 19.1 16.6984 19.1H44.8984L43.7984 25.1H19.2984C18.0984 25.1 16.9984 26.1 16.9984 27.4C16.9984 28.7 17.9984 29.7 19.2984 29.7H43.0984L41.1984 40.4L32.5984 43.5L23.9984 40.2L22.8984 34.7C22.6984 33.5 21.4984 32.7 20.1984 32.9C18.9984 33.1 18.1984 34.3 18.3984 35.6L19.5984 41.6C19.7984 42.8 20.6984 43.8 21.8984 44.2L31.2984 47.6C31.6984 47.7 32.0984 47.8 32.4984 47.8C32.8984 47.8 33.2984 47.7 33.6984 47.6L43.0984 44.2C44.2984 43.8 45.1984 42.7 45.3984 41.5L49.3984 19.2C49.5984 18 49.2984 16.9 48.4984 15.9V15.8Z"/><path d="M58.4994 4.3002C56.9994 2.7002 54.8994 1.7002 52.6994 1.7002H11.2994C9.09944 1.8002 6.99944 2.7002 5.49944 4.3002C3.99944 5.9002 3.29944 8.2002 3.59944 10.3002L8.49944 51.6002C8.89944 54.8002 11.2994 57.5002 14.3994 58.2002L30.1994 62.0002C30.7994 62.1002 31.3994 62.2002 31.9994 62.2002C32.5994 62.2002 33.1994 62.1002 33.7994 62.0002L49.5994 58.3002C52.6994 57.6002 55.0994 54.9002 55.4994 51.7002L60.3994 10.4002C60.5994 8.2002 59.8994 6.0002 58.4994 4.3002ZM55.8994 9.9002L50.9994 51.2002C50.7994 52.5002 49.8994 53.6002 48.4994 54.0002L32.6994 57.7002C32.1994 57.8002 31.6994 57.8002 31.1994 57.7002L15.4994 54.0002C14.1994 53.7002 13.1994 52.6002 12.9994 51.2002L8.09944 9.9002C7.99944 8.9002 8.29944 8.0002 8.89944 7.3002C9.49944 6.6002 10.3994 6.2002 11.2994 6.2002H52.6994C53.5994 6.2002 54.4994 6.6002 55.0994 7.3002C55.6994 8.0002 55.9994 8.9002 55.8994 9.9002Z"/>
+                            </svg>
+                            <p class="text-lg font-semibold">CSS</p>
+                        </div>
+                        <div class="bg-base-300 flex justify-center items-center flex-col gap-3 w-48 h-48 rounded transition-all duration-250 hover:scale-105 hover:shadow-perso hover:shadow-red-600">
+                            <svg fill="#CDCDCD" width="52" height="52" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1V63H63V1H1ZM34.8 49.3C34.8 55.4 31.2 58.2 26 58.2C21.4 58.2 18.7 55.8 17.3 52.8L22.1 49.8C22.9 51.5 23.8 52.8 25.9 52.8C27.9 52.8 29 52.1 29 49.1V29.5H34.8V49.3ZM48.6 58.2C43.2 58.2 39.7 55.5 37.9 52.3L42.7 49.5C44 51.5 45.7 53 48.5 53C50.9 53 52.4 51.9 52.4 50C52.4 48 50.9 47.3 48.2 46.1L46.8 45.5C42.6 43.8 39.8 41.4 39.8 36.6C39.8 32.2 43 29 48.3 29C52 29 54.6 30.3 56.5 33.7L52 36.7C51 35 50 34.2 48.2 34.2C46.5 34.2 45.4 35.3 45.4 36.7C45.4 38.4 46.5 39.1 48.9 40.2L50.3 40.8C55.2 42.9 58.1 45 58.1 50C58.2 55.3 54.1 58.2 48.6 58.2Z"/>
+                            </svg>
+                            <p class="text-lg font-semibold">Javascript</p>
+                        </div>
+                        <div class="bg-base-300 flex justify-center items-center flex-col gap-3 w-48 h-48 rounded transition-all duration-250 hover:scale-105 hover:shadow-perso hover:shadow-red-600">
+                            <svg fill="#CDCDCD" width="52" height="52" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32 17.4002C48.6 17.4002 61.3 24.3002 61.3 32.1002C61.3 39.9002 48.6 46.9002 32 46.9002C15.4 46.9002 2.7 39.9002 2.7 32.1002C2.7 24.3002 15.4 17.4002 32 17.4002ZM32 15.7002C14.8 15.7002 1 23.0002 1 32.0002C1 41.0002 14.8 48.2002 32 48.2002C49.2 48.2002 63 41.0002 63 32.0002C63 23.0002 49.2 15.7002 32 15.7002ZM22.1 30.8002C21.4 34.7002 18.6 34.3002 15.3 34.3002L16.7 27.4002C20.4 27.4002 22.8 27.0002 22.1 30.8002ZM10.4 41.2002H14L14.8 36.8002C18.7 36.8002 21.3 37.1002 23.5 35.0002C26 32.6002 26.7 28.5002 24.9 26.5002C23.9 25.4002 22.5 24.8002 20.4 24.8002H13.5L10.4 41.2002ZM28.5 20.5002H32L31.2 24.9002C34.2 24.9002 37.1 24.8002 38.5 26.0002C39.9 27.4002 39.2 29.0002 37.8 37.0002H34.1C35.5 29.4002 35.8 28.7002 35.4 28.1002C35 27.5002 33.4 27.5002 30.6 27.5002L28.8 37.0002H25.3L28.5 20.5002ZM49.9 30.8002C49.2 34.7002 46.4 34.3002 43.1 34.3002L44.5 27.4002C48.2 27.4002 50.6 27.0002 49.9 30.8002ZM38.2 41.2002H41.7L42.5 37.0002C46.7 37.0002 49 37.3002 51.2 35.2002C53.7 32.8002 54.4 28.7002 52.6 26.7002C51.6 25.6002 50.2 25.0002 48.1 25.0002H41.2L38.2 41.2002Z"/>
+                            </svg>
+                            <p class="text-lg font-semibold">PHP</p>
+                        </div>
+                        <div class="bg-base-300 flex justify-center items-center flex-col gap-3 w-48 h-48 rounded transition-all duration-250 hover:scale-105 hover:shadow-perso hover:shadow-red-600">
+                            <svg fill="#CDCDCD" width="52" height="52" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5857 26C19.5546 18.0003 24.4783 14 32.3549 14C44.1703 14 45.6472 23 51.5549 24.5C55.4936 25.5003 58.9395 24.0003 61.8934 20C59.9244 27.9997 55.0007 32 47.1241 32C35.3087 32 33.8318 23 27.9241 21.5C23.9854 20.4997 20.5395 21.9997 17.5857 26ZM2.81641 44C4.78532 36.0003 9.70902 32 17.5857 32C29.401 32 30.878 41 36.7857 42.5C40.7244 43.5003 44.1703 42.0003 47.1241 38C45.1552 45.9997 40.2315 50 32.3549 50C20.5395 50 19.0626 41 13.1549 39.5C9.21609 38.4997 5.77025 39.9997 2.81641 44Z"/>
+                            </svg>
+                            <p class="text-lg font-semibold">TailwindCSS</p>
+                        </div>
+                    </div>
+                </section> 
+
+                <!-- Work section -->
+                <section id="sectionWork" class="mt-10 min-h-[80vh]">
+                    <h2 class="text-3xl font-semibold mb-1">My Works</h2>
+                    <h3 class="text-2xl font-semibold ml-3">Creations for clients or particulars developed by me.</h3>
+
+                    <div class="mt-12 flex flex-wrap">
+                        <p class="text-center mx-auto text-base-content/80">Not have contents now</p>
+                    </div>
+                </section>
+
+                <!-- Creation section -->
+                <section id="sectionCreation" class="mt-10 min-h-[80vh]">
+                    <h2 class="text-3xl font-semibold mb-1">My Creations</h2>
+                    <h3 class="text-2xl font-semibold ml-3">My creations and projects for Omega Korps</h3>
+
+                    <div class="mt-12 flex flex-wrap justify-around">
+                        <div class="bg-base-300 w-[400px] h-72 rounded-md overflow-hidden">
+                            <div class="bg-base-content/40 w-full h-[45%]"></div>
+                            <div class="p-3 flex gap-2 flex-col">
+                                <div class="flex justify-between items-center">
+                                    <h2 class="text-xl font-semibold tracking-wide">Omega Korps web site</h2>
+                                    <div class="badge badge-info badge-sm">In progress</div>
+                                </div>
+
+                                <p class="text-md">This project is in developement, this is my future main web site for Omega Korps</p>
+
+                                <div class="mt-2 flex self-center gap-3">
+                                    <a href="https://omegakorps.com/" class="btn btn-sm btn-outline btn-primary px-8">View</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-base-300 w-[400px] h-72 rounded-md overflow-hidden">
+                            <div class="bg-base-content/40 w-full h-[45%]"></div>
+                            <div class="p-3 flex gap-2 flex-col">
+                                <div class="flex justify-between items-center">
+                                    <h2 class="text-xl font-semibold tracking-wide">Portfolio Karma66</h2>
+                                    <div class="badge badge-success badge-sm">Finish</div>
+                                </div>
+
+                                <p class="text-md">This project is in developement, this is my future main web site for Omega Korps</p>
+
+                                <div class="mt-2 flex self-center gap-3">
+                                    <a href="#" class="btn btn-sm btn-outline btn-primary px-8">View</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="card w-96 bg-base-100 shadow-xl border border-accent">
+                            <figure class="h-32" style="background-color: #ffffff20;"></figure>
+
+                            <div class="card-body">
+                                <h2 class="card-title">Omega Korps web site <div class="badge badge-info badge-sm">In progress</div></h2>
+
+                                <p>This project is in developement, this is my future main web site for Omega Korps</p>
+
+                                <div class="mt-3 card-actions justify-end">
+                                    <div class="badge badge-outline badge-sm">Omega Korps</div> 
+                                    <div class="badge badge-outline badge-sm">In developement</div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+
+                <!-- Mini creation section -->
+                <section id="sectionMiniProjects" class="mt-10 min-h-[80vh]">
+                    <h2 class="text-3xl font-semibold mb-1">My Mini Projects</h2>
+                    <h3 class="text-2xl font-semibold ml-3">My mini projects for learn and practice coding</h3>
+
+                    <div class="mt-12 flex flex-wrap">
+                        <p class="text-center mx-auto text-base-content/80">Not have contents now</p>
+                    </div>
+                </section>
+            </main>
+
+            <!-- footer = medias -->
+            <footer class="bg-base-300 p-4 flex justify-center items-center gap-5 text-base-content">
+                <a href="https://discord.gg/EqqJfUkB8f" target="_blank" class="w-8 transition-transform hover:scale-125">
+                    <svg fill="#CDCDCD" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_412_53)"><path d="M54.2141 11.2742C50.0713 9.33582 45.6415 7.92712 41.0104 7.125C40.4416 8.1533 39.7772 9.53637 39.319 10.6366C34.396 9.89625 29.5182 9.89625 24.6858 10.6366C24.2277 9.53637 23.5481 8.1533 22.9743 7.125C18.3382 7.92712 13.9033 9.341 9.76051 11.2844C1.40438 23.9116 -0.86083 36.2252 0.271778 48.3639C5.814 52.5027 11.1851 55.0169 16.4655 56.6621C17.7693 54.8678 18.9321 52.9603 19.9338 50.9501C18.026 50.2251 16.1987 49.3306 14.4722 48.292C14.9302 47.9526 15.3783 47.5979 15.8111 47.2328C26.3419 52.1583 37.7837 52.1583 48.1886 47.2328C48.6266 47.5979 49.0745 47.9526 49.5276 48.292C47.7959 49.3356 45.9637 50.2302 44.0559 50.9552C45.0576 52.9603 46.2154 54.873 47.5242 56.6672C52.8097 55.022 58.1858 52.5079 63.728 48.3639C65.0569 34.292 61.4578 22.0916 54.2141 11.2742ZM21.3685 40.8987C18.2073 40.8987 15.6148 37.9475 15.6148 34.3537C15.6148 30.7599 18.1519 27.8036 21.3685 27.8036C24.5851 27.8036 27.1775 30.7547 27.1221 34.3537C27.1271 37.9475 24.5851 40.8987 21.3685 40.8987ZM42.6313 40.8987C39.4701 40.8987 36.8776 37.9475 36.8776 34.3537C36.8776 30.7599 39.4147 27.8036 42.6313 27.8036C45.8479 27.8036 48.4403 30.7547 48.385 34.3537C48.385 37.9475 45.8479 40.8987 42.6313 40.8987Z"/></g>
+                        <defs><clipPath id="clip0_412_53"><rect width="64" height="64" fill="white"/></clipPath></defs>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/sunny-raloa/" target="_blank" class="w-8 transition-transform hover:scale-125">
+                    <svg fill="#CDCDCD" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M58.5016 1H5.60156C3.10156 1 1.10156 3 1.10156 5.5V58.5C1.10156 60.9 3.10156 63 5.60156 63H58.3016C60.8016 63 62.8016 61 62.8016 58.5V5.4C63.0016 3 61.0016 1 58.5016 1ZM19.4016 53.7H10.3016V24.2H19.4016V53.7ZM14.8016 20.1C11.8016 20.1 9.50156 17.7 9.50156 14.8C9.50156 11.9 11.9016 9.5 14.8016 9.5C17.7016 9.5 20.1016 11.9 20.1016 14.8C20.1016 17.7 17.9016 20.1 14.8016 20.1ZM53.9016 53.7H44.8016V39.4C44.8016 36 44.7016 31.5 40.0016 31.5C35.2016 31.5 34.5016 35.3 34.5016 39.1V53.7H25.4016V24.2H34.3016V28.3H34.4016C35.7016 25.9 38.6016 23.5 43.1016 23.5C52.4016 23.5 54.1016 29.5 54.1016 37.7V53.7H53.9016Z"/>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/OmegaKorps" target="_blank" class="w-8 transition-transform hover:scale-125">
+                    <svg fill="#CDCDCD" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.3 57.3996C43.9 57.3996 56.7 37.8996 56.7 20.9996C56.7 20.5996 56.7 19.8996 56.6 19.2996C59.1 17.4996 61.3 15.1996 63 12.6996C60.6 13.7996 58.2 14.3996 55.7 14.6996C58.4 13.0996 60.4 10.5996 61.3 7.59961C58.8 8.99961 56.2 10.0996 53.1 10.6996C50.7 8.19961 47.5 6.59961 43.8 6.59961C36.7 6.59961 30.9 12.3996 30.9 19.4996C30.9 20.4996 31 21.4996 31.2 22.4996C20.9 21.7996 11.5 16.6996 5.1 8.99961C4 10.9996 3.4 13.0996 3.4 15.3996C3.4 19.8996 5.7 23.6996 9.2 25.9996C7.1 25.8996 5.1 25.2996 3.4 24.3996C3.4 24.4996 3.4 24.4996 3.4 24.4996C3.4 30.5996 7.8 35.8996 13.6 37.0996C12.5 37.3996 11.3 37.4996 10.4 37.4996C9.6 37.4996 8.7 37.3996 8 37.1996C9.7 42.2996 14.4 45.9996 20 46.0996C15.6 49.4996 10.1 51.5996 4.2 51.5996C3 51.7996 2 51.5996 1 51.4996C6.4 55.2996 13.1 57.3996 20.3 57.3996Z"/>
+                    </svg>
+                </a>
+            </footer>
+        </main>
+    </body>
+</html>
