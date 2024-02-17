@@ -1,0 +1,31 @@
+<!-- <div class="card card-bordered card-compact border-accent border-2 w-[315px] h-[174px] bg-base-100 shadow-xl image-full">
+    <figure style="background-color: #0000ff20;"></figure>
+
+    <div class="card-body">
+        <p class="card-title mx-auto text-2xl">Html Css</p>
+    </div>
+</div>
+
+<div class="card card-bordered card-compact border-accent border-2 w-[315px] h-[174px] bg-base-100 shadow-xl image-full">
+    <figure style="background-color: #ffff0020;"></figure>
+
+    <div class="card-body">
+        <p class="card-title mx-auto text-2xl">Javascript</p>
+    </div>
+</div>
+
+<div class="card card-bordered card-compact border-accent border-2 w-[315px] h-[174px] bg-base-100 shadow-xl image-full">
+    <figure style="background-color: #ff00ff20;"></figure>
+
+    <div class="card-body">
+        <p class="card-title mx-auto text-2xl">PHP</p>
+    </div>
+</div>
+
+<div class="card card-bordered card-compact border-accent border-2 w-[315px] h-[174px] bg-base-100 shadow-xl image-full">
+    <figure style="background-color: #00ff0020;"></figure>
+
+    <div class="card-body">
+        <p class="card-title mx-auto text-2xl">Frameworks</p>
+    </div>
+</div> -->
