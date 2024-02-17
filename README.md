@@ -8,7 +8,7 @@ Bienvenue sur mon portfolio personnel. Il me permet de mettre en valeur mes comp
 
 ## Aperçu
 
-Vous pouvez consulter mon portfolio en ligne à l'adresse suivante : [Portfolio de Karma66](https://karma66-portfolio.omegakorps.com)
+Vous pouvez consulter mon portfolio en ligne à l'adresse suivante : [Portfolio de Karma66](https://portfolio-karma66.omegakorps.com)
 
 Explorez mon portfolio et découvrez mes compétences, projets et expériences professionnelles directement depuis votre navigateur.
 
