@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <nav class="fixed top-0 left-0 bottom-0 w-64 bg-base-300 flex flex-col items-center justify-between py-4">
+        <nav class="fixed top-0 left-0 bottom-0 w-64 bg-base-300 sm:flex hidden flex-col items-center justify-between py-4">
             <div class="avatar">
                 <div class="w-20 rounded-full">
                     <img src="ressources/profile.png" />
@@ -35,18 +35,22 @@
             </section>
         </nav>
 
-        <main class="ml-64">
+        <main class="sm:ml-64">
             <!-- <header class="bg-base-300 w-full h-6"></header> -->
 
             <main class="ml-5 pr-5 *:mt-10 *:min-h-[80vh]">
                 <!-- About section -->
                 <section id="sectionAbout">
-                    <h1 class="text-3xl font-semibold mb-1">Hellow! I'm Sunny Raloa <span class="text-secondary">Aka Karma66!</span></h1>
-                    <h2 class="text-2xl font-semibold ml-3">I'm a French web developer Full-stack</h2>
+                    <h1 class="sm:block flex flex-col items-center sm:text-3xl text-2.8xl font-semibold mb-1">
+                        <span>Hellow! <span>I'm Sunny Raloa</span></span>
+                        <span class="text-secondary">Aka Karma66!</span>
+                    </h1>
 
-                    <p class="my-14 ml-20 w-[501px] text-lg">Born on Reunion Island, I am 21 years old.<br>Practicing programming for nearly 3 years has included 2 years of self-teaching and attending web developement training on Reunion island.</p>
+                    <h2 class="sm:text-2xl text-xl font-semibold ml-3">I'm a French web developer Full-stack</h2>
 
-                    <div id="cards-about" class="w-fit mx-auto my-0 grid grid-cols-5 gap-3 justify-items-center *:bg-base-300 *:flex *:justify-center *:items-center *:flex-col *:gap-3 *:w-48 *:h-48 *:rounded *:transition-all *:duration-250 hover:*:scale-105 hover:*:shadow-perso hover:*:shadow-red-600">
+                    <p class="my-7 mx-auto sm:ml-20 sm:w-[501px] w-80% sm:text-xl text-lg sm:text-left text-center">Born on Reunion Island, I am 21 years old.<br>Practicing programming for nearly 3 years has included 2 years of self-teaching and attending web developement training on Reunion island.</p>
+
+                    <div id="cards-about" class="grid grid-cols-autofill-48 gap-2 justify-center *:bg-base-300 *:flex *:justify-center *:items-center *:flex-col *:gap-3 *:w-48 *:h-48 *:rounded *:transition-all *:duration-250 hover:*:scale-105 hover:*:shadow-perso hover:*:shadow-red-600">
                         <div>
                             <svg fill="#CDCDCD" width="52" height="52" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M32.4991 47.3002C31.9991 47.3002 31.5991 47.2002 31.1991 47.0002L23.1991 43.8002C21.9991 43.3002 21.1991 42.3002 20.9991 41.1002L20.0991 36.1002C19.8991 34.9002 20.6991 33.7002 21.8991 33.5002C23.0991 33.3002 24.2991 34.1002 24.4991 35.3002L25.2991 39.8002L32.4991 42.7002L39.6991 39.7002L41.4991 30.8002H22.6991C20.9991 30.8002 19.4991 29.6002 19.1991 27.8002L17.7991 19.8002C17.5991 18.7002 17.8991 17.5002 18.5991 16.6002L18.6991 16.5002C19.4991 15.7002 20.4991 15.2002 21.6991 15.2002H44.8991C46.0991 15.2002 47.1991 16.2002 47.1991 17.5002C47.1991 18.8002 46.1991 19.8002 44.8991 19.8002H22.2991L23.4991 26.4002H42.6991C43.7991 26.4002 44.7991 26.9002 45.4991 27.7002C46.1991 28.5002 46.4991 29.6002 46.1991 30.7002L44.0991 41.0002C43.8991 42.2002 43.0991 43.2002 41.9991 43.6002L33.9991 46.9002C33.4991 47.2002 32.9991 47.3002 32.4991 47.3002Z"/><path d="M32 62.1998C31.4 62.1998 30.8 62.0998 30.2 61.9998L14.4 58.2998C11.3 57.5998 8.90002 54.8998 8.50002 51.6998L3.60002 10.3998C3.40002 8.1998 4.10002 5.9998 5.50002 4.2998C7.00002 2.6998 9.10002 1.7998 11.3 1.7998H52.7C54.9 1.7998 57 2.6998 58.5 4.3998C60 5.9998 60.7 8.2998 60.4 10.3998L55.5 51.6998C55.1 54.8998 52.7 57.5998 49.6 58.2998L33.8 61.9998C33.2 62.1998 32.6 62.1998 32 62.1998ZM11.3 6.2998C10.4 6.2998 9.50002 6.69981 8.90002 7.39981C8.30002 7.99981 8.00002 8.8998 8.10002 9.8998L13 51.1998C13.2 52.4998 14.1 53.5998 15.5 53.9998L31.3 57.6998C31.8 57.7998 32.3 57.7998 32.8 57.6998L48.5 53.9998C49.8 53.6998 50.8 52.5998 51 51.1998L55.9 9.8998C56 8.8998 55.7 7.9998 55.1 7.2998C54.5 6.5998 53.6 6.1998 52.7 6.1998H11.3V6.2998Z"/>
@@ -78,12 +82,12 @@
                             <p class="text-lg font-semibold">TailwindCSS</p>
                         </div>
                     </div>
-                </section> 
+                </section>
 
                 <!-- Work section -->
                 <section id="sectionWork">
-                    <h2 class="text-3xl font-semibold mb-1">My Works</h2>
-                    <h3 class="text-2xl font-semibold ml-3">Creations for clients or particulars developed by me.</h3>
+                    <h2 class="sm:text-3xl text-2xl font-semibold mb-1">My Works</h2>
+                    <h3 class="sm:text-2xl text-xl font-semibold sm:ml-3">Creations for clients or particulars developed by me.</h3>
 
                     <div class="mt-12 flex flex-wrap">
                         <p class="text-center mx-auto text-base-content/80">Not have contents now</p>
@@ -92,38 +96,24 @@
 
                 <!-- Creation section -->
                 <section id="sectionCreation">
-                    <h2 class="text-3xl font-semibold mb-1">My Creations</h2>
-                    <h3 class="text-2xl font-semibold ml-3">My creations and projects for Omega Korps</h3>
+                    <h2 class="sm:text-3xl text-2xl font-semibold mb-1">My Creations</h2>
+                    <h3 class="sm:text-2xl text-xl font-semibold sm:ml-3">My creations and projects for Omega Korps</h3>
 
-                    <div class="mt-12 flex flex-wrap justify-around *:bg-base-300 *:w-[400px] *:h-72 *:rounded-md *:overflow-hidden">
+                    <div class="mt-12 grid grid-cols-autofill-72 gap-5 justify-center *:bg-base-300 *:w-72 *:h-48 *:rounded-md *:overflow-hidden">
                         <div>
                             <div class="bg-base-content/40 w-full h-[45%]"></div>
                             <div class="p-3 flex gap-2 flex-col">
-                                <div class="flex justify-between items-center">
-                                    <h2 class="text-xl font-semibold tracking-wide">Omega Korps web site</h2>
-                                    <div class="badge badge-info badge-sm">In progress</div>
-                                </div>
+                                <h2 class="text-lg text-center font-semibold tracking-wide">Omega Korps web site</h2>
 
-                                <p class="text-md">This project is in developement, this is my future main web site for Omega Korps</p>
-
-                                <div class="mt-2 flex self-center gap-3">
-                                    <a href="https://omegakorps.com/" class="btn btn-sm btn-outline btn-primary px-8">View</a>
-                                </div>
+                                <div class="badge badge-info">In progress</div>
                             </div>
                         </div>
                         <div>
                             <div class="bg-base-content/40 w-full h-[45%]"></div>
                             <div class="p-3 flex gap-2 flex-col">
-                                <div class="flex justify-between items-center">
-                                    <h2 class="text-xl font-semibold tracking-wide">Portfolio Karma66</h2>
-                                    <div class="badge badge-success badge-sm">Finish</div>
-                                </div>
+                                <h2 class="text-lg text-center font-semibold tracking-wide">Portfolio Karma66</h2>
 
-                                <p class="text-md">It's my portfolio, dev by me for me</p>
-
-                                <div class="mt-2 flex self-center gap-3">
-                                    <a href="#" class="btn btn-sm btn-outline btn-primary px-8">View</a>
-                                </div>
+                                <div class="badge badge-success">Finish</div>
                             </div>
                         </div>
                     </div>
@@ -131,8 +121,8 @@
 
                 <!-- Mini creation section -->
                 <section id="sectionMiniProjects">
-                    <h2 class="text-3xl font-semibold mb-1">My Mini Projects</h2>
-                    <h3 class="text-2xl font-semibold ml-3">My mini projects for learn and practice coding</h3>
+                    <h2 class="sm:text-3xl text-2xl font-semibold mb-1">My Mini Projects</h2>
+                    <h3 class="sm:text-2xl text-xl font-semibold sm:ml-3">My mini projects for learn and practice coding.</h3>
 
                     <div class="mt-12 flex flex-wrap">
                         <p class="text-center mx-auto text-base-content/80">Not have contents now</p>
@@ -141,7 +131,7 @@
             </main>
 
             <!-- footer = medias -->
-            <footer class="bg-base-300 p-4 flex justify-center items-center gap-5 text-base-content *:w-8 *:transition-transform hover:*:scale-125">
+            <footer class="bg-base-300 p-4 flex justify-center items-center gap-5 text-base-content sm:*:w-8 *:w-6 *:transition-transform hover:*:scale-125">
                 <a href="https://discord.gg/EqqJfUkB8f" target="_blank">
                     <svg fill="#CDCDCD" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_412_53)"><path d="M54.2141 11.2742C50.0713 9.33582 45.6415 7.92712 41.0104 7.125C40.4416 8.1533 39.7772 9.53637 39.319 10.6366C34.396 9.89625 29.5182 9.89625 24.6858 10.6366C24.2277 9.53637 23.5481 8.1533 22.9743 7.125C18.3382 7.92712 13.9033 9.341 9.76051 11.2844C1.40438 23.9116 -0.86083 36.2252 0.271778 48.3639C5.814 52.5027 11.1851 55.0169 16.4655 56.6621C17.7693 54.8678 18.9321 52.9603 19.9338 50.9501C18.026 50.2251 16.1987 49.3306 14.4722 48.292C14.9302 47.9526 15.3783 47.5979 15.8111 47.2328C26.3419 52.1583 37.7837 52.1583 48.1886 47.2328C48.6266 47.5979 49.0745 47.9526 49.5276 48.292C47.7959 49.3356 45.9637 50.2302 44.0559 50.9552C45.0576 52.9603 46.2154 54.873 47.5242 56.6672C52.8097 55.022 58.1858 52.5079 63.728 48.3639C65.0569 34.292 61.4578 22.0916 54.2141 11.2742ZM21.3685 40.8987C18.2073 40.8987 15.6148 37.9475 15.6148 34.3537C15.6148 30.7599 18.1519 27.8036 21.3685 27.8036C24.5851 27.8036 27.1775 30.7547 27.1221 34.3537C27.1271 37.9475 24.5851 40.8987 21.3685 40.8987ZM42.6313 40.8987C39.4701 40.8987 36.8776 37.9475 36.8776 34.3537C36.8776 30.7599 39.4147 27.8036 42.6313 27.8036C45.8479 27.8036 48.4403 30.7547 48.385 34.3537C48.385 37.9475 45.8479 40.8987 42.6313 40.8987Z"/></g>

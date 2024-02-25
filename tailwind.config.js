@@ -6,6 +6,13 @@ module.exports = {
     extend: {
       boxShadow: {
         'perso': '0 0 6px 1px 5px'
+      },
+      gridTemplateColumns: {
+        'autofill-48': 'repeat(auto-fill, 12rem)',
+        'autofill-72': 'repeat(auto-fill, 18rem)'
+      },
+      fontSize: {
+        '2.8xl': '1.58rem'
       }
     }
   },

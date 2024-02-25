@@ -1,11 +1,3 @@
-// const btnAbout = document.querySelector('#btnAbout');
-// const btnWork = document.querySelector('#btnWork');
-// const btnCreation = document.querySelector('#btnCreation');
-// const btnMiniCreation = document.querySelector('#btnMiniCreation');
-
-// const sectionAbout = document.querySelector('#sectionAbout');
-// const sectionWork = document.querySelector('#sectionWork');
-// const sectionCreation = document.querySelector('#sectionCreation');
 const buttons = [
     document.querySelector('#btnAbout'),
     document.querySelector('#btnWork'),
