@@ -15,7 +15,9 @@ h5, h6 { cursor: default; }
 
 .active-btn { border: 1px solid oklch(var(--p)); }
 
-#cards-about > div:hover {
-    > svg { fill: oklch(var(--p)); }
-    > p { color: oklch(var(--p)); }
+@media (min-width: 640px) {
+    #cards-about > div:hover {
+        > svg { fill: oklch(var(--p)); }
+        > p { color: oklch(var(--p)); }
+    }
 }
