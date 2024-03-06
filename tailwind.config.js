@@ -1,18 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['*.{html,css}'],
+  content: ['./src/*.html'],
   plugins: [require("daisyui")],
   theme:{
     extend: {
-      boxShadow: {
-        'perso': '0 0 6px 1px 5px'
-      },
-      gridTemplateColumns: {
-        'autofill-72': 'repeat(auto-fill, 18rem)'
-      },
-      fontSize: {
-        '2.8xl': '1.58rem'
-      }
+      boxShadow: { 'perso': '0 0 6px 1px 5px' },
+      gridTemplateColumns: { 'autofill-72': 'repeat(auto-fill, 18rem)' },
+      fontSize: { '2.8xl': '1.58rem' }
     }
   },
   daisyui: {
